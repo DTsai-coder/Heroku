@@ -15,7 +15,7 @@ const app = express(); // to activate the server
 // Includes the HTTP package (builtin), and we attach our Express.js server object to the HTTP object.
 const http = require("http").Server(app); // to call server to provide http
 // We create a variable that will hold the port number we want to use.
-const port = 3000;
+const port = process.env.PORT || 5000;
 // We pass the port variable to the listen function for the HTTP server.
 http.listen(port); // to tell HTTP which port to listen to
 
