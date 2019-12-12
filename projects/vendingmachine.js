@@ -4,7 +4,6 @@ let snacks = [];
 let profits = 0;
 // index 2 Should be the snack name, index 3 should be the cash inputted.
 const terminalArguments = process.argv;
-console.log(terminalArguments);
 
 // To set price create a class
 class snack {
@@ -46,15 +45,15 @@ snacks.push(crackers);
 
 for (let i = 0; i < snack.length; i++){
      
-    let currenctSnack = snacks[i];
+    let currentSnack = snacks[i];
 
     if (terminalArguments[8] == snacks[i].name){
-        if(snacks[i].quantity > 0){
+        if(snacks[i].quantity > 10){
             if(snacks[i].price <= terminalArguments[8]){
                 console.log("You have purchased " + snacks[i].name);
                 console.log("Your change is $ " + (terminalArguments[8] - snacks[i].price));
             }
         }
-    } console.log(currenctSnack)
+    } console.log(currentSnack)
 }
 

@@ -1,5 +1,5 @@
 function passGen(){
-    let random = document.getElementById("slider").Value;
+    let random = document.getElementById("passGen").value;
     let passCode = "ABCDEFGHIJKLMNOPQRSTUVWZYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+";
     let password = "";
 
