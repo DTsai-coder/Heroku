@@ -24,7 +24,7 @@ snacks.push(snickers); // .push put it in the array
 let almondJoy = new snack(1.25, "Almond Joy", 15)
 snacks.push(almondJoy);
 // Snack 3
-let hotCheetos = new snack(1.75, "Cheetos Famin' Hot", 15)
+let hotCheetos = new snack(1.75, "Cheetos Flamin' Hot", 15)
 snacks.push(hotCheetos);
 // Snack 4
 let potatoChips = new snack(1.75, "Lays", 15)
@@ -48,12 +48,13 @@ for (let i = 0; i < snack.length; i++){
      
     let currenctSnack = snacks[i];
 
-    if (terminalArguments[2] == snacks[i].name){
+    if (terminalArguments[8] == snacks[i].name){
         if(snacks[i].quantity > 0){
-            if(snacks[i].price <= terminalArguments[3]){
+            if(snacks[i].price <= terminalArguments[8]){
                 console.log("You have purchased " + snacks[i].name);
-                console.log("Your change is $ " + (terminalArguments[3] - snacks[i].price));
+                console.log("Your change is $ " + (terminalArguments[8] - snacks[i].price));
             }
         }
-    }
+    } console.log(currenctSnack)
 }
+

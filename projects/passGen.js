@@ -5,7 +5,7 @@ function passGen(){
 
     for(var i = 0; i <= random; i++){
 
-        password = password + passCode.charAt(Math.floor(Math.random() * Math.floor(passCode.lenght - 1)))
+        password = password + passCode.charAt(Math.floor(Math.random() * Math.floor(passCode.length - 1)))
     };
 };
 
