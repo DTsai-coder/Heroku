@@ -1,6 +1,6 @@
 // Creating a vending machine
 // To store objects create an array
-let snacks = [];
+let snacks = []; // EMPTY ARRAY TO STORE OBJECTS
 let profits = 0;
 // index 2 Should be the snack name, index 3 should be the cash inputted.
 const terminalArguments = process.argv;
@@ -43,7 +43,8 @@ snacks.push(crackers);
 
 // Use linear search to go through each item
 
-for (let i = 0; i < snack.length; i++){
+// For loop
+for (let i = 0; i < snacks.length; i++){
      
     let currentSnack = snacks[i];
 

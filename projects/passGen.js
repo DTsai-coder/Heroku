@@ -1,12 +1,21 @@
+// RANDOM PASSWORD GENERATOR
+
+// FUNCTION
 function passGen(){
-    let random = document.getElementById("passGen").value;
+    
+    // STORE A STRING
     let passCode = "ABCDEFGHIJKLMNOPQRSTUVWZYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+";
+    // EMPTY STRING
     let password = "";
 
-    for(var i = 0; i <= random; i++){
+    // FOR LOOP
+    for(let i = 0; i <= passCode.length; i++){
 
         password = password + passCode.charAt(Math.floor(Math.random() * Math.floor(passCode.length - 1)))
-    };
-};
+    }return password;
 
-console.log(passGen)
+};
+// CALL THE FUNCTION
+console.log(passGen());
+
+
